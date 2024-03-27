@@ -37,7 +37,7 @@ with col4:
 with col5:
     wickets = int(st.number_input('Wickets out'))
 if st.button('Predict Probability'):
-    if target and score and overs and wickets and (batting_team != bowling_team):
+    if target and score and overs and (batting_team != bowling_team):
         runs_left = target - score
         balls_left = 120 - (overs*6)
         wickets = 10 - wickets
